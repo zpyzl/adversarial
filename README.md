@@ -7,14 +7,14 @@ fast adversarial on TextCNN
 # PGD
 参考https://zhuanlan.zhihu.com/p/91269728
 
-正常训练：
-反向传播，得到正常的grad
+正常训练：  
+反向传播，得到正常的grad  
 
 对抗训练：
-在embedding上添加对抗扰动
-反向传播，并在正常的grad基础上，累加对抗训练的梯度
-恢复embedding参数
-梯度下降，更新参数
+在embedding上添加对抗扰动  
+反向传播，并在正常的grad基础上，累加对抗训练的梯度  
+恢复embedding参数  
+梯度下降，更新参数  
 
 # free
 参考https://github.com/locuslab/fast_adversarial/tree/master/CIFAR10
@@ -41,8 +41,8 @@ fast adversarial on TextCNN
 
 
 # FGSM(fast adversarial方式)
-主要区别是每次的训练，delta都是在-epsilon~epsilon之间初始化为随机值。
-两个好处：
-1.避免了每个epoch分为N步更新梯度的时间代价
-2.保证了扰动微小
+主要区别是每次的训练，delta都是在-epsilon~epsilon之间初始化为随机值。  
+两个好处：  
+1.避免了每个epoch分为N步更新梯度的时间代价  
+2.保证了扰动微小  
 
